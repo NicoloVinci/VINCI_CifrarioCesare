@@ -6,7 +6,7 @@ public class CifrarioCesare {
         String output = "";
         for (int i = 0; i < input.length(); i++) {
             if((int)input.charAt(i) >= 65 && (int)input.charAt(i) <= 90){
-                if((int)input.charAt(i) + chiave > 91) {
+                if((int)input.charAt(i) + chiave > 90) {
                     output += (char)((int)input.charAt(i) - (26 - chiave));
                 } else {
                     output += (char)((int)input.charAt(i) +  chiave);
